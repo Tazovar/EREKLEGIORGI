@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Filter UI</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      padding: 2rem;
+      background-color: #f9f9f9;
+    }
+
+    .filter-bar {
+      display: flex;
+      gap: 1rem;
+      margin-bottom: 2rem;
+      flex-wrap: wrap;
+      align-items: center;
+    }
+
+    select {
+      padding: 0.5rem;
+      border-radius: 8px;
+      border: 1px solid #ccc;
+      background-color: #fff;
+      font-size: 1rem;
+      min-width: 160px;
+    }
+
+    button {
+      padding: 0.5rem 1rem;
+      font-size: 1rem;
+      border: none;
+      border-radius: 8px;
+      background-color: #007BFF;
+      color: #fff;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    button:hover {
+      background-color: #0056b3;
+    }
+
+    .main_container {
+      background-color: #fff;
+      padding: 1rem;
+      border-radius: 12px;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+      min-height: 200px;
+    }
+
+    .basket_btn{
+        margin: 50px 0px;
+        display: inline-block;
+        font-size: 50px;
+    }
+  </style>
+</head>
+<body>
+
+    <a class="basket_btn" href="basket/basket.html">GO BASKET</a>
+
+
+
+    
+
+  <div class="filter-bar">
+    <select class="vegeterian_select">
+      <option value="">ვეგეტარიანული?</option>
+      <option value="true">ვეგეტარიანული</option>
+      <option value="false">არავეგეტარიანული</option>
+    </select>
+
+    <select class="nuts_select">
+      <option value="">თხილი?</option>
+      <option value="true">თხილიანი</option>
+      <option value="false">თხილის გარეშე</option>
+    </select>
+
+    <select class="spiciness_select">
+      <option value="">სიმწარე</option>
+      <option value="1">1</option>
+      <option value="2">2</option>
+      <option value="3">3</option>
+      <option value="4">4</option>
+      <option value="5">5</option>
+    </select>
+
+    <select class="category_select">
+      <option value="">კატეგორია</option>
+    </select>
+
+    <button onclick="onFilterBtnClick()">გაფილტრე</button>
+  </div>
+
+  <div class="main_container"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>
